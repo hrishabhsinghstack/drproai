@@ -7,30 +7,41 @@ import { LabCard } from '@/components/cards/LabCard'
 import { ExerciseCard } from '@/components/cards/ExerciseCard'
 import { SupplementCard } from '@/components/cards/SupplementCard'
 import { Doctor, Lab, Exercise, Supplement } from '@/types/medical'
+import { UploadPromptCard } from './UploadPromptCard'
 import { FileText, ImageIcon } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 interface Props {
   message: Message
   onQuickAsk?: (text: string) => void
+  onSendFile?: (base64: string, mimeType: string, name: string, previewUrl: string, prompt?: string) => void
 }
 
-export function MessageBubble({ message, onQuickAsk }: Props) {
+export function MessageBubble({ message, onQuickAsk, onSendFile }: Props) {
   const isUser = message.role === 'user'
 
   if (message.isStreaming && !message.content) {
     return <TypingIndicator />
   }
 
-  // Parse follow-ups if present
+  // Parse follow-ups and upload prompts if present
   let cleanContent = message.content || ''
   let followups: string[] = []
+  let uploadPromptType: string | null = null
 
   if (!isUser) {
+    // Parse follow-ups
     const followupMatch = cleanContent.match(/\[FOLLOWUP\](.*?)\[\/FOLLOWUP\]/s)
     if (followupMatch) {
       cleanContent = cleanContent.replace(followupMatch[0], '').trim()
       followups = followupMatch[1].split('|').map((q) => q.trim()).filter(Boolean)
+    }
+
+    // Parse upload prompts
+    const uploadMatch = cleanContent.match(/\[UPLOAD_PROMPT:\s*(\w+)\]/)
+    if (uploadMatch) {
+      cleanContent = cleanContent.replace(uploadMatch[0], '').trim()
+      uploadPromptType = uploadMatch[1]
     }
   }
 
@@ -47,7 +58,7 @@ export function MessageBubble({ message, onQuickAsk }: Props) {
         </div>
       )}
 
-      <div className={cn('flex flex-col gap-2 max-w-[75%]', isUser ? 'items-end' : 'items-start')}>
+      <div className={cn('flex flex-col gap-2 max-w-[85%] sm:max-w-[75%]', isUser ? 'items-end' : 'items-start')}>
         {/* Attachments */}
         {message.attachments && message.attachments.length > 0 && (
           <div className="flex flex-wrap gap-2">
@@ -86,6 +97,14 @@ export function MessageBubble({ message, onQuickAsk }: Props) {
               <StreamingText text={cleanContent} isStreaming={message.isStreaming} />
             )}
           </div>
+        )}
+
+        {/* Upload Prompt Card */}
+        {uploadPromptType && !message.isStreaming && (
+          <UploadPromptCard
+            type={uploadPromptType as any}
+            onUpload={(base64, mime, name, preview) => onSendFile?.(base64, mime, name, preview)}
+          />
         )}
 
         {/* Cards */}

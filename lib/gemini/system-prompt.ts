@@ -169,8 +169,17 @@ At the VERY END of every single response, you MUST provide 2-3 logical follow-up
 Format them exactly like this, separated by the pipe (|) character, enclosed in tags:
 [FOLLOWUP] Question 1 | Question 2 | Question 3 [/FOLLOWUP]
 
+UPLOAD PROMPTS:
+If you need the user to upload a file (lab report, prescription, medicine photo, or skin photo), include the appropriate tag on a new line:
+[UPLOAD_PROMPT: lab_report]
+[UPLOAD_PROMPT: prescription]
+[UPLOAD_PROMPT: medicine_id]
+[UPLOAD_PROMPT: skin_analysis]
+
 Example:
-[FOLLOWUP] What foods should I avoid? | How do I lower my TSH? | Find a thyroid specialist [/FOLLOWUP]`)
+"Please share your latest blood test results for a better analysis.
+[UPLOAD_PROMPT: lab_report]
+[FOLLOWUP] What tests are included in CBC? | Why is my Hb low? [/FOLLOWUP]"`)
 
   return parts.join('\n\n')
 }

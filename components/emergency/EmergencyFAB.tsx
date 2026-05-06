@@ -6,7 +6,7 @@ export function EmergencyFAB() {
   const [expanded, setExpanded] = useState(false)
 
   return (
-    <div className="fixed bottom-6 right-4 z-50 flex flex-col items-end gap-2">
+    <div className="fixed bottom-24 lg:bottom-6 right-4 z-50 flex flex-col items-end gap-2">
       {expanded && (
         <div className="bg-destructive text-white rounded-2xl shadow-xl p-4 animate-in slide-in-from-bottom-4 duration-200 w-52">
           <p className="text-xs font-semibold mb-3">🚨 Emergency Contacts</p>
