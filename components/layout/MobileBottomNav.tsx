@@ -15,7 +15,7 @@ export function MobileBottomNav() {
   const pathname = usePathname()
 
   return (
-    <nav className="lg:hidden fixed bottom-0 left-0 right-0 bg-background border-t border-border z-20 pb-safe">
+    <nav className="lg:hidden bg-background border-t border-border pb-safe shrink-0">
       <div className="flex">
         {TABS.map(({ href, label, icon: Icon }) => {
           const active = pathname === href || (href !== '/chat' && pathname.startsWith(href))
