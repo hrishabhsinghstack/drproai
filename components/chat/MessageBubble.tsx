@@ -31,7 +31,7 @@ export function MessageBubble({ message, onQuickAsk, onSendFile }: Props) {
 
   if (!isUser) {
     // Parse follow-ups
-    const followupMatch = cleanContent.match(/\[FOLLOWUP\](.*?)\[\/FOLLOWUP\]/s)
+    const followupMatch = cleanContent.match(/\[FOLLOWUP\]([\s\S]*?)\[\/FOLLOWUP\]/)
     if (followupMatch) {
       cleanContent = cleanContent.replace(followupMatch[0], '').trim()
       followups = followupMatch[1].split('|').map((q) => q.trim()).filter(Boolean)
