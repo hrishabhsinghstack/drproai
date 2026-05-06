@@ -30,7 +30,7 @@ export function ChatPage({ featureMode, title, description, placeholder }: Props
   const hasMessages = messages.length > 0
 
   return (
-    <div className="flex flex-col h-full">
+    <div className="flex flex-col h-full w-full overflow-hidden">
       {/* Page header */}
       <div className="px-4 py-3 border-b border-border bg-background/60 shrink-0">
         <h2 className="text-sm font-semibold text-foreground">{title}</h2>
@@ -38,29 +38,35 @@ export function ChatPage({ featureMode, title, description, placeholder }: Props
       </div>
 
       {/* Messages or greeting */}
-      <ScrollArea className="flex-1">
-        {hasMessages ? (
-          <ChatMessages messages={messages} />
-        ) : (
-          <GreetingScreen onQuickAsk={sendMessage} />
-        )}
-      </ScrollArea>
+      <div className="flex-1 min-h-0 relative">
+        <ScrollArea className="h-full w-full">
+          {hasMessages ? (
+            <div className="pb-4">
+              <ChatMessages messages={messages} />
+            </div>
+          ) : (
+            <GreetingScreen onQuickAsk={sendMessage} />
+          )}
+        </ScrollArea>
+      </div>
 
       {/* Quick ask chips (only when no messages) */}
       {!hasMessages && (
-        <div className="border-t border-border bg-background/60">
+        <div className="border-t border-border bg-background/60 shrink-0">
           <QuickAskChips onSelect={sendMessage} featureMode={featureMode} />
         </div>
       )}
 
-      {/* Input */}
-      <ChatInput
-        onSend={sendMessage}
-        onSendFile={sendFile}
-        isStreaming={isStreaming}
-        featureMode={featureMode}
-        placeholder={placeholder}
-      />
+      {/* Input area */}
+      <div className="shrink-0">
+        <ChatInput
+          onSend={sendMessage}
+          onSendFile={sendFile}
+          isStreaming={isStreaming}
+          featureMode={featureMode}
+          placeholder={placeholder}
+        />
+      </div>
     </div>
   )
 }
