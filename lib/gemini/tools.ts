@@ -52,8 +52,7 @@ export const TOOL_DECLARATIONS: FunctionDeclaration[] = [
       properties: {
         condition: {
           type: SchemaType.STRING,
-          enum: ['diabetes', 'hypertension', 'pcod', 'stress', 'back_pain', 'obesity', 'thyroid', 'general_fitness'],
-          description: 'The health condition to get exercises for',
+          description: "The health condition to get exercises for (e.g. 'diabetes', 'hypertension', 'pcod', 'stress', 'back_pain', 'obesity', 'thyroid', 'general_fitness')",
         },
       },
       required: ['condition'],
@@ -96,8 +95,7 @@ export const TOOL_DECLARATIONS: FunctionDeclaration[] = [
       properties: {
         type: {
           type: SchemaType.STRING,
-          enum: ['medication', 'appointment', 'custom'],
-          description: 'Type of reminder',
+          description: "Type of reminder (e.g. 'medication', 'appointment', 'custom')",
         },
         title: {
           type: SchemaType.STRING,
