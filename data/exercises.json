@@ -1,0 +1,200 @@
+{
+  "diabetes": [
+    {
+      "id": "ex_d1",
+      "name": "Brisk Walking",
+      "type": "cardio",
+      "duration_minutes": 30,
+      "frequency": "Daily",
+      "intensity": "moderate",
+      "description": "30-minute brisk walk significantly lowers blood sugar by increasing insulin sensitivity in muscle cells.",
+      "steps": ["Wear comfortable, well-fitted shoes", "Start at a slow pace for 5 min warm-up", "Increase to brisk pace — you should be able to talk but not sing", "Maintain for 20 minutes", "Cool down with slow walk for 5 min"],
+      "caution": "Check blood sugar before exercise. Carry glucose tablets. Avoid if blood sugar > 300 mg/dL.",
+      "benefits": ["Lowers HbA1c by 0.5–1%", "Reduces insulin resistance", "Improves cardiovascular health", "Aids weight management"],
+      "image_emoji": "🚶"
+    },
+    {
+      "id": "ex_d2",
+      "name": "Yoga – Surya Namaskar",
+      "type": "yoga",
+      "duration_minutes": 20,
+      "frequency": "5 days/week",
+      "intensity": "low",
+      "description": "12 postures in sequence improve circulation, reduce cortisol, and help stabilize blood sugar.",
+      "steps": ["Stand in Pranamasana (prayer pose)", "Raise arms (Hastauttanasana)", "Forward bend (Hasta Padasana)", "Lunge (Ashwa Sanchalanasana)", "Plank (Dandasana)", "Eight-point prostration (Ashtanga Namaskar)", "Cobra (Bhujangasana)", "Reverse the sequence"],
+      "caution": "Start with 4 rounds and build up. Avoid if you have back injury.",
+      "benefits": ["Reduces fasting blood sugar", "Improves flexibility", "Reduces stress hormones", "Aids digestion"],
+      "image_emoji": "🧘"
+    },
+    {
+      "id": "ex_d3",
+      "name": "Resistance Band Exercises",
+      "type": "strength",
+      "duration_minutes": 25,
+      "frequency": "3 days/week",
+      "intensity": "moderate",
+      "description": "Resistance training builds muscle mass which acts as a glucose sink, improving long-term blood sugar control.",
+      "steps": ["Bicep curls × 15 reps", "Shoulder press × 12 reps", "Squats with band × 15 reps", "Seated rows × 12 reps", "Lateral raises × 12 reps", "Rest 60 sec between sets", "Complete 3 sets"],
+      "caution": "Monitor blood sugar before and after. Eat a light snack if blood sugar < 120 mg/dL before exercise.",
+      "benefits": ["Increases glucose uptake by muscles", "Improves insulin sensitivity", "Maintains healthy weight", "Strengthens bones"],
+      "image_emoji": "💪"
+    }
+  ],
+  "hypertension": [
+    {
+      "id": "ex_h1",
+      "name": "Deep Breathing – Pranayama",
+      "type": "yoga",
+      "duration_minutes": 15,
+      "frequency": "Twice daily",
+      "intensity": "low",
+      "description": "Slow deep breathing activates the parasympathetic nervous system, lowering heart rate and blood pressure.",
+      "steps": ["Sit comfortably with spine erect", "Inhale slowly for 4 counts", "Hold for 2 counts", "Exhale slowly for 6 counts", "Repeat 10–15 cycles", "Practice Anulom Vilom (alternate nostril) for 5 min"],
+      "caution": "Never strain while breathing. If dizzy, breathe normally.",
+      "benefits": ["Lowers systolic BP by 5–10 mmHg", "Reduces cortisol", "Calms the mind", "Improves heart rate variability"],
+      "image_emoji": "🌬️"
+    },
+    {
+      "id": "ex_h2",
+      "name": "Swimming / Water Walking",
+      "type": "cardio",
+      "duration_minutes": 30,
+      "frequency": "4 days/week",
+      "intensity": "moderate",
+      "description": "Water exercise is gentle on joints while providing excellent cardiovascular benefit and BP reduction.",
+      "steps": ["Warm up with water walking for 5 min", "Swim freestyle or breaststroke at comfortable pace", "Maintain steady rhythm", "Avoid breath-holding or intense sprints", "Cool down with gentle floating"],
+      "caution": "Do not exercise if BP > 180/110 mmHg. Consult doctor before starting.",
+      "benefits": ["Reduces BP by 7–9 mmHg", "Low impact on joints", "Improves cardiovascular fitness", "Reduces stress"],
+      "image_emoji": "🏊"
+    }
+  ],
+  "pcod": [
+    {
+      "id": "ex_p1",
+      "name": "HIIT – High Intensity Interval Training",
+      "type": "cardio",
+      "duration_minutes": 25,
+      "frequency": "3 days/week",
+      "intensity": "high",
+      "description": "Short bursts of intense exercise followed by rest periods improve insulin sensitivity and help regulate hormones in PCOD.",
+      "steps": ["Warm up 5 min with light jogging", "30 sec jumping jacks (full effort)", "30 sec rest", "30 sec high knees (full effort)", "30 sec rest", "30 sec burpees (full effort)", "30 sec rest", "Repeat circuit 4 times", "Cool down 5 min stretching"],
+      "caution": "Not recommended if very overweight — start with low impact. Stop if you feel pain or extreme fatigue.",
+      "benefits": ["Reduces testosterone levels", "Improves insulin sensitivity", "Aids weight loss", "Regulates menstrual cycles"],
+      "image_emoji": "⚡"
+    },
+    {
+      "id": "ex_p2",
+      "name": "Yoga – PCOD Sequence",
+      "type": "yoga",
+      "duration_minutes": 30,
+      "frequency": "Daily",
+      "intensity": "low",
+      "description": "Specific yoga poses stimulate the ovaries, balance hormones, and reduce cortisol which disrupts menstrual cycles.",
+      "steps": ["Butterfly Pose (Baddha Konasana) – 3 min", "Supine Bound Angle – 3 min", "Camel Pose (Ustrasana) – 1 min", "Child's Pose – 2 min", "Cat-Cow stretch – 2 min", "Legs Up the Wall (Viparita Karani) – 5 min", "Corpse pose (Savasana) – 5 min"],
+      "caution": "Avoid inversions during periods. Practice on empty stomach.",
+      "benefits": ["Stimulates ovarian function", "Reduces androgens", "Reduces stress", "Improves blood flow to pelvis"],
+      "image_emoji": "🦋"
+    }
+  ],
+  "stress": [
+    {
+      "id": "ex_s1",
+      "name": "Meditation – Body Scan",
+      "type": "mindfulness",
+      "duration_minutes": 15,
+      "frequency": "Daily",
+      "intensity": "low",
+      "description": "Systematic body awareness practice that activates the relaxation response and lowers cortisol significantly.",
+      "steps": ["Lie down comfortably", "Close eyes and take 3 deep breaths", "Focus on your feet — notice any sensations", "Slowly move awareness upward: legs, hips, abdomen, chest", "Continue to arms, shoulders, neck, face", "When mind wanders, gently bring it back", "End with 3 deep breaths and open eyes slowly"],
+      "caution": "It's normal for the mind to wander — this is not failure. Simply return attention.",
+      "benefits": ["Reduces cortisol by 20–30%", "Improves sleep quality", "Reduces anxiety", "Lowers blood pressure"],
+      "image_emoji": "🧘"
+    },
+    {
+      "id": "ex_s2",
+      "name": "Evening Walk in Nature",
+      "type": "cardio",
+      "duration_minutes": 30,
+      "frequency": "Daily",
+      "intensity": "low",
+      "description": "Walking in green spaces (parks, gardens) has been proven to lower cortisol and improve mood better than urban walks.",
+      "steps": ["Leave phone on silent if possible", "Walk at comfortable, relaxed pace", "Notice surroundings — trees, birds, sky", "Breathe naturally and deeply", "No destination needed — enjoy the walk itself"],
+      "caution": "Wear comfortable shoes. Stay hydrated.",
+      "benefits": ["Reduces stress hormones", "Boosts serotonin and dopamine", "Improves sleep", "Clears mental fatigue"],
+      "image_emoji": "🌳"
+    }
+  ],
+  "back_pain": [
+    {
+      "id": "ex_b1",
+      "name": "Cat-Cow Stretch",
+      "type": "stretching",
+      "duration_minutes": 10,
+      "frequency": "Twice daily",
+      "intensity": "low",
+      "description": "Gentle spinal flexion and extension lubricates vertebral joints and relieves tension in back muscles.",
+      "steps": ["Get on hands and knees (tabletop position)", "Inhale — drop belly toward floor, lift head and tailbone (Cow)", "Exhale — round spine toward ceiling, tuck chin and pelvis (Cat)", "Move slowly and rhythmically", "Repeat 10–15 times"],
+      "caution": "Stop if movement causes sharp or shooting pain.",
+      "benefits": ["Relieves lower back stiffness", "Improves spinal flexibility", "Reduces muscle tension", "Warms up the spine"],
+      "image_emoji": "🐱"
+    },
+    {
+      "id": "ex_b2",
+      "name": "Child's Pose (Balasana)",
+      "type": "yoga",
+      "duration_minutes": 5,
+      "frequency": "As needed",
+      "intensity": "low",
+      "description": "Gentle resting pose that lengthens the lower back and releases tension in the hips and spine.",
+      "steps": ["Kneel on floor, sit back on heels", "Spread knees hip-width apart", "Fold forward, extending arms overhead or alongside body", "Rest forehead on mat", "Breathe deeply into the back body", "Hold for 1–3 minutes"],
+      "caution": "Avoid if you have knee injury. Place a pillow between thighs and calves if needed.",
+      "benefits": ["Decompresses lower spine", "Releases hip flexors", "Calming effect on nervous system"],
+      "image_emoji": "🙇"
+    }
+  ],
+  "obesity": [
+    {
+      "id": "ex_o1",
+      "name": "Low-Impact Aerobics",
+      "type": "cardio",
+      "duration_minutes": 40,
+      "frequency": "5 days/week",
+      "intensity": "moderate",
+      "description": "Low-impact aerobic exercise burns calories while being gentle on joints, making it ideal for people who are overweight.",
+      "steps": ["March in place 3 min", "Side steps with arm swings 3 min", "Step touches 3 min", "Modified jumping jacks (no jump) 3 min", "Seated punches 3 min", "Repeat circuit 4–5 times"],
+      "caution": "Start with 20 min and gradually increase. Stay hydrated.",
+      "benefits": ["Burns 200–300 calories per session", "Improves cardiovascular health", "Reduces joint stress", "Builds endurance"],
+      "image_emoji": "🏃"
+    }
+  ],
+  "thyroid": [
+    {
+      "id": "ex_t1",
+      "name": "Sarvangasana (Shoulder Stand)",
+      "type": "yoga",
+      "duration_minutes": 5,
+      "frequency": "4 days/week",
+      "intensity": "moderate",
+      "description": "Inverted pose that increases blood flow to the thyroid gland, potentially stimulating underactive thyroid function.",
+      "steps": ["Lie on your back", "Lift legs slowly to 90 degrees", "Support lower back with hands", "Lift torso until body is vertical", "Hold for 30 sec to 2 min", "Come down slowly, never jerk"],
+      "caution": "Avoid with high BP, glaucoma, neck injury, or during menstruation. Learn from instructor first.",
+      "benefits": ["Stimulates thyroid gland", "Improves metabolism", "Relieves fatigue", "Balances hormones"],
+      "image_emoji": "🙃"
+    }
+  ],
+  "general_fitness": [
+    {
+      "id": "ex_g1",
+      "name": "Bodyweight Workout",
+      "type": "strength",
+      "duration_minutes": 30,
+      "frequency": "3 days/week",
+      "intensity": "moderate",
+      "description": "Full-body workout using no equipment, builds strength and stamina.",
+      "steps": ["Push-ups × 10", "Squats × 15", "Lunges × 10 each leg", "Plank hold × 30 sec", "Mountain climbers × 20", "Glute bridges × 15", "Rest 60 sec, repeat 3 sets"],
+      "caution": "Maintain proper form over quantity. Stop if you feel joint pain.",
+      "benefits": ["Builds lean muscle", "Improves metabolism", "No equipment needed", "Improves posture"],
+      "image_emoji": "🏋️"
+    }
+  ]
+}
