@@ -112,11 +112,21 @@ export function MessageBubble({ message, onQuickAsk, onSendFile }: Props) {
           <div className="flex flex-col gap-3 w-full mt-1">
             {message.cards.map((payload, i) => {
               if (payload.type === 'doctor') {
+                const doctors = payload.data as Doctor[]
                 return (
                   <div key={i} className="flex flex-col gap-3 w-full">
-                    {(payload.data as Doctor[]).map((d) => (
+                    {doctors.map((d) => (
                       <DoctorCard key={d.id} doctor={d} />
                     ))}
+                    {doctors.length >= 3 && (
+                      <button 
+                        className="w-full py-2.5 border border-slate-200 dark:border-slate-800 rounded-xl text-[13px] font-semibold text-[#5048E5] bg-white dark:bg-slate-900/50 hover:bg-slate-50 transition-all flex items-center justify-center gap-2"
+                        onClick={() => window.location.href = '/chat/explore'} // Or a specific search page
+                      >
+                        See more doctors
+                        <span className="text-[16px]">→</span>
+                      </button>
+                    )}
                   </div>
                 )
               }

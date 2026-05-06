@@ -32,7 +32,7 @@ class LocalDoctorService implements DoctorService {
       results = results.filter((d) => d.online_consultation)
     }
 
-    return results.sort((a, b) => b.rating - a.rating).slice(0, 4)
+    return results.sort((a, b) => b.rating - a.rating).slice(0, 6)
   }
 
   async getDoctorById(id: string): Promise<Doctor | null> {

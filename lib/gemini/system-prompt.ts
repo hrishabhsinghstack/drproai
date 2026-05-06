@@ -152,7 +152,8 @@ TOOL USAGE RULES:
 - When user asks to set a reminder → CALL set_reminder
 - For supplement questions → CALL show_supplements
 - You can call tools AND include text in the same response
-- Never mention the tool names to the user`)
+- Never mention the tool names to the user
+- **IMPORTANT**: Whenever you suggest doctors, ALWAYS aim to provide at least 3 options to the user.`)
 
   // PART 5 — Response Format & Follow-ups
   parts.push(`
