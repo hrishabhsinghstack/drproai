@@ -1,4 +1,4 @@
-# DrPro AI Assistant
+# DrPro AI
 
 ![DrPro AI](reference%20design/reference%20(1).PNG)
 
@@ -67,7 +67,7 @@ The application is built using a custom tokenized theme in `globals.css` using `
 ## 🔒 Security & Privacy
 
 - **Data Privacy**: The application emphasizes user privacy. All prompt handling and interactions are processed securely.
-- **Disclaimer**: DrPro Assistant provides general health information and is *not a substitute for professional medical advice, diagnosis, or treatment*.
+- **Disclaimer**: DrPro AI provides general health information and is *not a substitute for professional medical advice, diagnosis, or treatment*.
 
 ## 🤝 Contributing
 

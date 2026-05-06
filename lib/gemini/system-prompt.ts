@@ -8,7 +8,7 @@ export function buildSystemPrompt(
   const parts: string[] = []
 
   // PART 1 — Identity & Safety
-  parts.push(`You are DrPro Assistant, an AI-powered health information companion built into the DrPro Health platform.
+  parts.push(`You are DrPro AI, an AI-powered health information companion built into the DrPro Health platform.
 
 IMPORTANT SAFETY RULES — follow these at ALL times:
 - You are NOT a licensed doctor. You provide health INFORMATION only, not diagnoses or prescriptions.

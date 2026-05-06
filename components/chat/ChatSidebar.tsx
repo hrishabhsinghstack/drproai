@@ -54,7 +54,7 @@ export function ChatSidebar() {
               D
             </div>
             <div>
-              <p className="text-xs font-bold text-sidebar-foreground leading-tight">DrPro Assistant</p>
+              <p className="text-xs font-bold text-sidebar-foreground leading-tight">DrPro AI</p>
               <p className="text-[10px] text-muted-foreground">Hi, {firstName} 👋</p>
             </div>
           </div>

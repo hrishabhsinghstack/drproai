@@ -18,7 +18,7 @@ export default function ExplorePage() {
     <div className="flex-1 overflow-y-auto p-4 pb-24 bg-slate-50 dark:bg-background">
       <div className="max-w-3xl mx-auto">
         <h1 className="text-2xl font-bold mb-1">Explore Features</h1>
-        <p className="text-sm text-muted-foreground mb-6">Discover all the ways DrPro Assistant can help you.</p>
+        <p className="text-sm text-muted-foreground mb-6">Discover all the ways DrPro AI can help you.</p>
 
         <div className="grid grid-cols-2 gap-3 sm:gap-4 sm:grid-cols-3">
           {EXPLORE_CARDS.map((card, i) => {

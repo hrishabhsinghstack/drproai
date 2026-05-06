@@ -19,7 +19,7 @@ export function AppHeader() {
         </div>
         <div className="hidden sm:block">
           <span className="text-sm font-bold text-foreground">DrPro</span>
-          <span className="text-sm font-medium text-primary"> Assistant</span>
+          <span className="text-sm font-medium text-primary"> AI</span>
         </div>
       </Link>
 

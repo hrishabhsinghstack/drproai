@@ -10,7 +10,7 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "DrPro Assistant – Smart Health Chatbot",
+  title: "DrPro AI – Smart Health Chatbot",
   description: "Your personal AI companion for smarter health decisions. Analyze reports, identify medicines, check symptoms and more.",
 };
 
