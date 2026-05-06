@@ -34,7 +34,7 @@ export function ExerciseCard({ exercise }: { exercise: Exercise }) {
               {exercise.duration_minutes} min
             </span>
             <span>•</span>
-            <span className="text-[#5048E5] font-medium bg-[#5048E5]/10 px-1.5 py-0.5 rounded-sm">
+            <span className="text-[#00a99d] bg-[#00a99d]/10 px-1.5 py-0.5 rounded-sm">
               {exercise.intensity === 'low' ? 'Beginner Friendly' : 'Advanced'}
             </span>
           </div>
@@ -43,7 +43,7 @@ export function ExerciseCard({ exercise }: { exercise: Exercise }) {
 
       {/* Action */}
       <div className="pl-2 shrink-0">
-        <Button size="sm" variant="outline" className="h-8 px-3 text-xs font-medium text-[#5048E5] border-[#5048E5] hover:bg-[#5048E5] hover:text-white rounded-lg whitespace-nowrap">
+        <Button size="sm" variant="outline" className="h-8 px-3 text-xs font-medium text-[#00a99d] border-[#00a99d] hover:bg-[#00a99d] hover:text-white rounded-lg whitespace-nowrap">
           Start Now
         </Button>
       </div>

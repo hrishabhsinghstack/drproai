@@ -67,7 +67,7 @@ export function ChatInput({ onSend, onSendFile, isStreaming, featureMode, placeh
           />
         </div>
       )}
-      <div className="flex items-end gap-2 bg-white dark:bg-card rounded-full border border-slate-200 shadow-sm pl-4 pr-1.5 py-1.5 focus-within:border-[#5048E5]/50 focus-within:ring-1 focus-within:ring-[#5048E5]/20 transition-all">
+      <div className="flex items-end gap-2 bg-white dark:bg-card rounded-full border border-slate-200 shadow-sm pl-4 pr-1.5 py-1.5 focus-within:border-[#00a99d]/50 focus-within:ring-1 focus-within:ring-[#00a99d]/20 transition-all">
         {supportsFile && !pendingFile && (
           <FileUploadZone onFile={handleFile} className="mb-1 shrink-0" />
         )}
@@ -84,7 +84,7 @@ export function ChatInput({ onSend, onSendFile, isStreaming, featureMode, placeh
         
         {/* Mic Icon (Placeholder) */}
         {!text.trim() && !pendingFile && (
-          <button className="p-2.5 mb-0.5 text-slate-400 hover:text-[#5048E5] transition-colors shrink-0">
+          <button className="p-2.5 mb-0.5 text-slate-400 hover:text-[#00a99d] transition-colors shrink-0">
             <Mic className="w-[18px] h-[18px]" />
           </button>
         )}
@@ -95,8 +95,8 @@ export function ChatInput({ onSend, onSendFile, isStreaming, featureMode, placeh
           className={cn(
             'w-[42px] h-[42px] rounded-full flex items-center justify-center transition-all shrink-0 ml-1',
             (text.trim() || pendingFile) && !isStreaming
-              ? 'bg-[#5048E5] text-white hover:bg-[#4338CA] shadow-md shadow-indigo-500/20'
-              : 'bg-[#5048E5] text-white opacity-90' // The reference shows it's always colored, or just less prominent
+              ? 'bg-[#00a99d] text-white hover:bg-[#008e84] shadow-md shadow-indigo-500/20'
+              : 'bg-[#00a99d] text-white opacity-90' // The reference shows it's always colored, or just less prominent
           )}
         >
           {isStreaming || uploading ? (

@@ -85,7 +85,7 @@ export function UploadPromptCard({ type, onUpload }: Props) {
       <button
         onClick={() => fileInputRef.current?.click()}
         disabled={uploading}
-        className="w-full h-11 bg-[#5048E5] text-white rounded-xl text-sm font-bold hover:bg-[#4338CA] transition-all active:scale-[0.98] flex items-center justify-center gap-2"
+        className="w-full h-11 bg-[#00a99d] text-white rounded-xl text-sm font-bold hover:bg-[#008e84] transition-all active:scale-[0.98] flex items-center justify-center gap-2"
       >
         {uploading ? (
           <>

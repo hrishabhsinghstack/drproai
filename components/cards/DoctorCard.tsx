@@ -45,7 +45,7 @@ export function DoctorCard({ doctor }: { doctor: Doctor }) {
 
       {/* Action */}
       <div className="pl-3 shrink-0">
-        <Button size="sm" className="h-8 px-4 text-xs bg-[#5048E5] hover:bg-[#4338CA] text-white rounded-lg font-medium shadow-sm">
+        <Button size="sm" className="h-8 px-4 text-xs bg-[#00a99d] hover:bg-[#008e84] text-white rounded-lg font-medium shadow-sm">
           Book
         </Button>
       </div>

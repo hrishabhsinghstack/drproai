@@ -73,7 +73,7 @@ export function MessageBubble({ message, onQuickAsk, onSendFile }: Props) {
                   // eslint-disable-next-line @next/next/no-img-element
                   <img src={att.previewUrl} alt={att.name} className="w-10 h-10 rounded object-cover" />
                 ) : (
-                  <ImageIcon className="w-4 h-4 text-[#5048E5]" />
+                  <ImageIcon className="w-4 h-4 text-[#00a99d]" />
                 )}
                 <span className="max-w-[120px] truncate text-slate-700 font-medium">{att.name}</span>
               </div>
@@ -87,7 +87,7 @@ export function MessageBubble({ message, onQuickAsk, onSendFile }: Props) {
             className={cn(
               'px-4 py-3 shadow-sm text-[15px] leading-relaxed',
               isUser
-                ? 'bg-[#5048E5] text-white rounded-2xl rounded-br-sm'
+                ? 'bg-[#00a99d] text-white rounded-2xl rounded-br-sm'
                 : 'bg-white dark:bg-card border border-slate-100 text-slate-800 rounded-2xl rounded-bl-sm'
             )}
           >
@@ -120,7 +120,7 @@ export function MessageBubble({ message, onQuickAsk, onSendFile }: Props) {
                     ))}
                     {doctors.length >= 3 && (
                       <button 
-                        className="w-full py-2.5 border border-slate-200 dark:border-slate-800 rounded-xl text-[13px] font-semibold text-[#5048E5] bg-white dark:bg-slate-900/50 hover:bg-slate-50 transition-all flex items-center justify-center gap-2"
+                        className="w-full py-2.5 border border-slate-200 dark:border-slate-800 rounded-xl text-[13px] font-semibold text-[#00a99d] bg-white dark:bg-slate-900/50 hover:bg-slate-50 transition-all flex items-center justify-center gap-2"
                         onClick={() => window.location.href = '/chat/explore'} // Or a specific search page
                       >
                         See more doctors
@@ -169,7 +169,7 @@ export function MessageBubble({ message, onQuickAsk, onSendFile }: Props) {
               <button
                 key={i}
                 onClick={() => onQuickAsk?.(q)}
-                className="text-[12px] font-medium bg-white text-[#5048E5] border border-[#5048E5]/30 hover:bg-[#EEF2FF] hover:border-[#5048E5] px-3 py-1.5 rounded-full transition-all shadow-sm text-left leading-tight max-w-xs"
+                className="text-[12px] font-medium bg-white text-[#00a99d] border border-[#00a99d]/30 hover:bg-[#EEF2FF] hover:border-[#00a99d] px-3 py-1.5 rounded-full transition-all shadow-sm text-left leading-tight max-w-xs"
               >
                 {q}
               </button>
@@ -182,7 +182,7 @@ export function MessageBubble({ message, onQuickAsk, onSendFile }: Props) {
             {new Date(message.timestamp).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true })}
           </span>
           {isUser && (
-            <span className="text-[10px] text-[#5048E5] opacity-0 group-hover:opacity-100 transition-opacity">
+            <span className="text-[10px] text-[#00a99d] opacity-0 group-hover:opacity-100 transition-opacity">
               ✓✓
             </span>
           )}

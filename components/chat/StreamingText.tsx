@@ -93,7 +93,7 @@ export function StreamingText({ text, isStreaming }: Props) {
       if (line.startsWith('- ') || line.startsWith('• ')) {
         blocks.push(
           <div key={i} className="flex gap-2 my-0.5 ml-1">
-            <span className="text-[#5048E5] mt-0.5 shrink-0">•</span>
+            <span className="text-[#00a99d] mt-0.5 shrink-0">•</span>
             <span>{processInline(line.slice(2))}</span>
           </div>
         )
@@ -104,7 +104,7 @@ export function StreamingText({ text, isStreaming }: Props) {
       if (numberedMatch) {
         blocks.push(
           <div key={i} className="flex gap-2 my-0.5 ml-1">
-            <span className="text-[#5048E5] font-medium shrink-0">{numberedMatch[1]}.</span>
+            <span className="text-[#00a99d] font-medium shrink-0">{numberedMatch[1]}.</span>
             <span>{processInline(numberedMatch[2])}</span>
           </div>
         )

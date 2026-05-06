@@ -37,7 +37,7 @@ export function LabCard({ lab }: { lab: Lab }) {
           )}
 
           <div className="mt-3">
-            <Button size="sm" variant="outline" className="h-8 text-xs font-medium text-[#5048E5] border-[#5048E5] hover:bg-[#5048E5] hover:text-white rounded-lg w-[100px]">
+            <Button size="sm" variant="outline" className="h-8 text-xs font-medium text-[#00a99d] border-[#00a99d] hover:bg-[#00a99d] hover:text-white rounded-lg w-[100px]">
               Book Test
             </Button>
           </div>

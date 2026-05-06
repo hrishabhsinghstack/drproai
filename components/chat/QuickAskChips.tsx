@@ -27,7 +27,7 @@ export function QuickAskChips({ onSelect, featureMode }: Props) {
         <button
           key={chip}
           onClick={() => onSelect(chip)}
-          className="text-[13px] font-medium bg-white hover:bg-[#EEF2FF] text-[#5048E5] border border-[#5048E5]/30 hover:border-[#5048E5] px-3.5 py-1.5 rounded-full transition-all cursor-pointer shadow-sm"
+          className="text-[13px] font-medium bg-white hover:bg-[#EEF2FF] text-[#00a99d] border border-[#00a99d]/30 hover:border-[#00a99d] px-3.5 py-1.5 rounded-full transition-all cursor-pointer shadow-sm"
         >
           {chip}
         </button>

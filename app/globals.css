@@ -49,106 +49,114 @@
 }
 
 :root {
-  /* DrPro Assistant — violet/purple primary palette */
+  /* DrPro Assistant — Teal & Blue Branding */
   --background: oklch(1 0 0);
-  --foreground: oklch(0.18 0.02 270);
+  --foreground: oklch(0.20 0.04 220);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.18 0.02 270);
+  --card-foreground: oklch(0.20 0.04 220);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.18 0.02 270);
+  --popover-foreground: oklch(0.20 0.04 220);
 
-  /* Primary: deep violet #7C3AED */
-  --primary: oklch(0.52 0.24 293);
+  /* Primary: DrPro Teal #00a99d -> oklch(0.64 0.16 185) */
+  --primary: oklch(0.60 0.15 190);
   --primary-foreground: oklch(1 0 0);
 
-  /* Secondary: soft lavender #F5F3FF */
-  --secondary: oklch(0.96 0.02 293);
-  --secondary-foreground: oklch(0.52 0.24 293);
+  /* Secondary: Soft Cyan/Blue #F0FDFA */
+  --secondary: oklch(0.97 0.03 190);
+  --secondary-foreground: oklch(0.45 0.14 190);
 
-  --muted: oklch(0.96 0.01 270);
-  --muted-foreground: oklch(0.52 0.02 270);
+  --muted: oklch(0.96 0.01 220);
+  --muted-foreground: oklch(0.50 0.04 220);
 
-  /* Accent: rose/pink for period tracker #EC4899 */
-  --accent: oklch(0.65 0.24 350);
+  /* Accent: Bright Cyan #0D9488 */
+  --accent: oklch(0.55 0.15 190);
   --accent-foreground: oklch(1 0 0);
 
-  /* Destructive: red #EF4444 for emergency */
-  --destructive: oklch(0.60 0.22 27);
+  /* Destructive: Deep Red for Emergency */
+  --destructive: oklch(0.55 0.22 25);
 
-  --border: oklch(0.91 0.02 293);
-  --input: oklch(0.93 0.01 293);
-  --ring: oklch(0.52 0.24 293);
+  --border: oklch(0.92 0.03 190);
+  --input: oklch(0.94 0.02 190);
+  --ring: oklch(0.60 0.15 190);
 
-  /* Charts — teal / purple / pink */
-  --chart-1: oklch(0.52 0.24 293);
-  --chart-2: oklch(0.65 0.20 200);
-  --chart-3: oklch(0.65 0.24 350);
-  --chart-4: oklch(0.75 0.18 150);
-  --chart-5: oklch(0.70 0.15 60);
+  /* Charts — Teal / Cyan / Blue */
+  --chart-1: oklch(0.60 0.15 190);
+  --chart-2: oklch(0.50 0.15 240);
+  --chart-3: oklch(0.70 0.12 180);
+  --chart-4: oklch(0.45 0.14 260);
+  --chart-5: oklch(0.80 0.10 195);
 
   --radius: 0.875rem;
 
   /* Sidebar */
-  --sidebar: oklch(0.975 0.02 293);
-  --sidebar-foreground: oklch(0.25 0.04 270);
-  --sidebar-primary: oklch(0.52 0.24 293);
+  --sidebar: oklch(0.98 0.01 190);
+  --sidebar-foreground: oklch(0.20 0.04 220);
+  --sidebar-primary: oklch(0.60 0.15 190);
   --sidebar-primary-foreground: oklch(1 0 0);
-  --sidebar-accent: oklch(0.93 0.04 293);
-  --sidebar-accent-foreground: oklch(0.52 0.24 293);
-  --sidebar-border: oklch(0.91 0.02 293);
-  --sidebar-ring: oklch(0.52 0.24 293);
+  --sidebar-accent: oklch(0.94 0.03 190);
+  --sidebar-accent-foreground: oklch(0.45 0.14 190);
+  --sidebar-border: oklch(0.92 0.03 190);
+  --sidebar-ring: oklch(0.60 0.15 190);
 
   /* Chat-specific tokens */
-  --chat-bg: oklch(0.975 0.015 293);
-  --chat-user-bubble: oklch(0.52 0.24 293);
+  --chat-bg: oklch(0.98 0.01 190);
+  --chat-user-bubble: oklch(0.60 0.15 190);
   --chat-user-text: oklch(1 0 0);
   --chat-ai-bubble: oklch(1 0 0);
-  --chat-ai-text: oklch(0.18 0.02 270);
-  --period-primary: oklch(0.52 0.22 310);
-  --period-secondary: oklch(0.96 0.04 310);
-  --emergency: oklch(0.60 0.22 27);
+  --chat-ai-text: oklch(0.20 0.04 220);
+  --period-primary: oklch(0.65 0.18 330);
+  --period-secondary: oklch(0.97 0.03 330);
+  --emergency: oklch(0.55 0.22 25);
 }
 
 .dark {
-  --background: oklch(0.14 0.02 270);
-  --foreground: oklch(0.95 0.01 270);
-  --card: oklch(0.19 0.03 270);
-  --card-foreground: oklch(0.95 0.01 270);
-  --popover: oklch(0.19 0.03 270);
-  --popover-foreground: oklch(0.95 0.01 270);
-  --primary: oklch(0.65 0.22 293);
+  --background: oklch(0.12 0.03 220);
+  --foreground: oklch(0.95 0.01 220);
+  --card: oklch(0.16 0.04 220);
+  --card-foreground: oklch(0.95 0.01 220);
+  --popover: oklch(0.16 0.04 220);
+  --popover-foreground: oklch(0.95 0.01 220);
+  
+  --primary: oklch(0.70 0.14 190);
   --primary-foreground: oklch(1 0 0);
-  --secondary: oklch(0.24 0.04 293);
-  --secondary-foreground: oklch(0.85 0.05 293);
-  --muted: oklch(0.24 0.02 270);
-  --muted-foreground: oklch(0.65 0.02 270);
-  --accent: oklch(0.65 0.24 350);
+  
+  --secondary: oklch(0.20 0.05 190);
+  --secondary-foreground: oklch(0.90 0.05 190);
+  
+  --muted: oklch(0.20 0.02 220);
+  --muted-foreground: oklch(0.65 0.02 220);
+  
+  --accent: oklch(0.70 0.14 190);
   --accent-foreground: oklch(1 0 0);
-  --destructive: oklch(0.65 0.22 27);
+  
+  --destructive: oklch(0.65 0.22 25);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 12%);
-  --ring: oklch(0.65 0.22 293);
-  --chart-1: oklch(0.65 0.22 293);
-  --chart-2: oklch(0.65 0.20 200);
-  --chart-3: oklch(0.65 0.24 350);
-  --chart-4: oklch(0.75 0.18 150);
-  --chart-5: oklch(0.70 0.15 60);
-  --sidebar: oklch(0.19 0.03 270);
-  --sidebar-foreground: oklch(0.95 0.01 270);
-  --sidebar-primary: oklch(0.65 0.22 293);
+  --ring: oklch(0.70 0.14 190);
+  
+  --chart-1: oklch(0.70 0.14 190);
+  --chart-2: oklch(0.60 0.15 240);
+  --chart-3: oklch(0.80 0.10 180);
+  --chart-4: oklch(0.55 0.15 260);
+  --chart-5: oklch(0.90 0.05 195);
+  
+  --sidebar: oklch(0.16 0.04 220);
+  --sidebar-foreground: oklch(0.95 0.01 220);
+  --sidebar-primary: oklch(0.70 0.14 190);
   --sidebar-primary-foreground: oklch(1 0 0);
-  --sidebar-accent: oklch(0.26 0.04 293);
-  --sidebar-accent-foreground: oklch(0.85 0.05 293);
+  --sidebar-accent: oklch(0.24 0.04 190);
+  --sidebar-accent-foreground: oklch(0.90 0.05 190);
   --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.65 0.22 293);
-  --chat-bg: oklch(0.17 0.025 270);
-  --chat-user-bubble: oklch(0.65 0.22 293);
+  --sidebar-ring: oklch(0.70 0.14 190);
+  
+  --chat-bg: oklch(0.14 0.03 220);
+  --chat-user-bubble: oklch(0.70 0.14 190);
   --chat-user-text: oklch(1 0 0);
-  --chat-ai-bubble: oklch(0.21 0.03 270);
-  --chat-ai-text: oklch(0.92 0.01 270);
-  --period-primary: oklch(0.60 0.22 310);
-  --period-secondary: oklch(0.24 0.04 310);
-  --emergency: oklch(0.65 0.22 27);
+  --chat-ai-bubble: oklch(0.20 0.04 220);
+  --chat-ai-text: oklch(0.95 0.01 220);
+  --period-primary: oklch(0.65 0.18 330);
+  --period-secondary: oklch(0.25 0.04 330);
+  --emergency: oklch(0.65 0.22 25);
 }
 
 @layer base {
