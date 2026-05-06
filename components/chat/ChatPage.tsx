@@ -42,7 +42,7 @@ export function ChatPage({ featureMode, title, description, placeholder }: Props
         <ScrollArea className="h-full w-full">
           {hasMessages ? (
             <div className="pb-4">
-              <ChatMessages messages={messages} />
+              <ChatMessages messages={messages} onQuickAsk={sendMessage} />
             </div>
           ) : (
             <GreetingScreen onQuickAsk={sendMessage} />

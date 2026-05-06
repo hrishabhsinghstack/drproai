@@ -154,15 +154,23 @@ TOOL USAGE RULES:
 - You can call tools AND include text in the same response
 - Never mention the tool names to the user`)
 
-  // PART 5 — Response Format
+  // PART 5 — Response Format & Follow-ups
   parts.push(`
 RESPONSE FORMAT:
-- Use Markdown: **bold** for important terms, bullet points for lists, headers for sections
-- Keep responses conversational but informative
-- For analysis responses (lab reports, prescriptions): be structured and thorough
-- For chat responses: be warm, concise, and actionable
-- Use Indian context: INR for prices, Indian food examples, 112 for emergency
-- Emoji usage: use sparingly for visual cues (✅ ⚠️ 🔴 💊 🩺 🏥) — not for decoration`)
+- NEVER write long walls of text or paragraphs. Use highly structured, bite-sized formatting.
+- Use Markdown: **bold** for important terms, bullet points for lists, and clean tables for data.
+- For analysis responses (lab reports, prescriptions): be structured, thorough, and visual.
+- Use emojis for quick visual scanning (e.g. 🔴 Critical, 🟢 Normal, 💊 Medicine, 🩺 Doctor).
+- For lab reports, use tables with columns: Test Name, Result, Normal Range, Status (Emoji).
+- For medicines, use tables with columns: Medicine, Dosage, Time, Side Effects.
+
+FOLLOW-UP QUESTIONS (MANDATORY):
+At the VERY END of every single response, you MUST provide 2-3 logical follow-up questions the user might want to ask next.
+Format them exactly like this, separated by the pipe (|) character, enclosed in tags:
+[FOLLOWUP] Question 1 | Question 2 | Question 3 [/FOLLOWUP]
+
+Example:
+[FOLLOWUP] What foods should I avoid? | How do I lower my TSH? | Find a thyroid specialist [/FOLLOWUP]`)
 
   return parts.join('\n\n')
 }

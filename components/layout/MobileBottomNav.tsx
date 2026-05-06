@@ -5,9 +5,9 @@ import { HeartPulse, CalendarHeart, Dumbbell, User } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 const TABS = [
-  { href: '/chat', label: 'Health AI', icon: HeartPulse },
-  { href: '/chat/period-tracker', label: 'Period', icon: CalendarHeart },
-  { href: '/chat/exercises', label: 'Exercise', icon: Dumbbell },
+  { href: '/chat', label: 'Chat', icon: HeartPulse },
+  { href: '/chat/explore', label: 'Explore', icon: Dumbbell }, // Use compass/search icon later
+  { href: '/chat/period-tracker', label: 'History', icon: CalendarHeart },
   { href: '/chat/profile', label: 'Profile', icon: User },
 ]
 

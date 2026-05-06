@@ -5,9 +5,10 @@ import { MessageBubble } from './MessageBubble'
 
 interface Props {
   messages: Message[]
+  onQuickAsk: (text: string) => void
 }
 
-export function ChatMessages({ messages }: Props) {
+export function ChatMessages({ messages, onQuickAsk }: Props) {
   const bottomRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -17,7 +18,7 @@ export function ChatMessages({ messages }: Props) {
   return (
     <div className="flex flex-col gap-1 py-2">
       {messages.map((msg) => (
-        <MessageBubble key={msg.id} message={msg} />
+        <MessageBubble key={msg.id} message={msg} onQuickAsk={onQuickAsk} />
       ))}
       <div ref={bottomRef} />
     </div>

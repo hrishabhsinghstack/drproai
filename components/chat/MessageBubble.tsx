@@ -12,13 +12,26 @@ import { cn } from '@/lib/utils'
 
 interface Props {
   message: Message
+  onQuickAsk?: (text: string) => void
 }
 
-export function MessageBubble({ message }: Props) {
+export function MessageBubble({ message, onQuickAsk }: Props) {
   const isUser = message.role === 'user'
 
   if (message.isStreaming && !message.content) {
     return <TypingIndicator />
+  }
+
+  // Parse follow-ups if present
+  let cleanContent = message.content || ''
+  let followups: string[] = []
+
+  if (!isUser) {
+    const followupMatch = cleanContent.match(/\[FOLLOWUP\](.*?)\[\/FOLLOWUP\]/s)
+    if (followupMatch) {
+      cleanContent = cleanContent.replace(followupMatch[0], '').trim()
+      followups = followupMatch[1].split('|').map((q) => q.trim()).filter(Boolean)
+    }
   }
 
   return (
@@ -58,7 +71,7 @@ export function MessageBubble({ message }: Props) {
         )}
 
         {/* Text bubble */}
-        {message.content && (
+        {cleanContent && (
           <div
             className={cn(
               'px-4 py-3 shadow-sm text-[15px] leading-relaxed',
@@ -68,9 +81,9 @@ export function MessageBubble({ message }: Props) {
             )}
           >
             {isUser ? (
-              <p>{message.content}</p>
+              <p>{cleanContent}</p>
             ) : (
-              <StreamingText text={message.content} isStreaming={message.isStreaming} />
+              <StreamingText text={cleanContent} isStreaming={message.isStreaming} />
             )}
           </div>
         )}
@@ -117,6 +130,21 @@ export function MessageBubble({ message }: Props) {
               }
               return null
             })}
+          </div>
+        )}
+
+        {/* Follow-up Pills */}
+        {!isUser && followups.length > 0 && !message.isStreaming && (
+          <div className="flex flex-wrap gap-1.5 mt-1">
+            {followups.map((q, i) => (
+              <button
+                key={i}
+                onClick={() => onQuickAsk?.(q)}
+                className="text-[12px] font-medium bg-white text-[#5048E5] border border-[#5048E5]/30 hover:bg-[#EEF2FF] hover:border-[#5048E5] px-3 py-1.5 rounded-full transition-all shadow-sm text-left leading-tight max-w-xs"
+              >
+                {q}
+              </button>
+            ))}
           </div>
         )}
 
